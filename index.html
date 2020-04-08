@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 	<title>Landing Page</title>
 	<script src="https://kit.fontawesome.com/baad5ee4c4.js" crossorigin="anonymous"></script>
-	<script src="form_check.js"></script>
+	<script src="check.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -81,7 +81,7 @@
 
 	</div>
 
-<form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+<form name="myForm" onsubmit="return Validate(this)" method="post">
 <div class="part">
 	<label>
 Work Email
@@ -94,7 +94,7 @@ Work Email
 <label>
 First Name
 </label>
-<input type="text" name="firstName" id="id-firstName" placeholder="ex. John" value="">
+<input type="text" name="firstName" id="id-firstName" placeholder="ex. John">
 	
 
 </div>
@@ -102,7 +102,7 @@ First Name
 	<label>
 Last Name
 </label>
-<input type="text" name="lastName" id="id-lastName" placeholder="ex. Smith" value="">
+<input type="text" name="lastName" id="id-lastName" placeholder="ex. Smith">
 
 
 </div>
@@ -119,14 +119,14 @@ Last Name
 </div>
 	
 <div class="check-box">
-<input type="checkbox" name="privacyPolicy" id="id-privacyPolicy-2-1" value="false">
+<input type="checkbox" name="checkbox" id="id-privacyPolicy-2-1" value="false">
 <label>
 	<span>I agree to GoToNewYork’s <a href="https://www.hashicorp.com/privacy" target="_blank">Privacy Policy</a>.</span>
 </label>
 </div>
 
 <div class="part">
-	<input type="submit" name="">
+	<input type="submit" name="submit">
 	<label>Register</label>
 </div>
 </div>
