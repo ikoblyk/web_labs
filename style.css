@@ -115,6 +115,10 @@ p {
 	margin: 20px; 
 }
 
+.content-pic > p {
+	align-self: center;
+}
+
 p:hover {
 	  border-bottom: 2px solid #6C6C6C;
 }
@@ -432,10 +436,22 @@ input[type=submit]:hover {
   .image-part {
   	margin-left: 0%;
   }
+  
  
   }
+   
+  @media only screen and (max-width: 745px) {
 
-	
+  .iframe-container iframe {
+	border: 0;
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+ }
+}
 
 
-
+.iframe-container iframe {
+margin-top: 5%;
+ }
