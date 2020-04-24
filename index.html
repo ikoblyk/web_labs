@@ -8,6 +8,9 @@
 	<title>Landing Page</title>
 	<script src="https://kit.fontawesome.com/baad5ee4c4.js" crossorigin="anonymous"></script>
 	<script src="check.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="dark.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -16,7 +19,7 @@
 <div class="header">
 	<div class="menu">
 	<nav>
-			    <ul>
+			    <ul class="iter">
 			        <li><a href="#">HOME</a></li>
 			        <li><a href="#">MORE</a>
 			         <ul>
@@ -25,10 +28,17 @@
 			                <li><a href="#">TOURS</a></li>
 			            </ul></li>
 			        <li><a href="#">CONTACT</a></li>
-			         <li><a href="#">ABOUS US</a></li>
+					 <li><a href="#">ABOUS US</a></li>
+			
+
 			       
-			    </ul>
+				</ul>
+				<div class="theme">
+					<input type="button" id="btn" name="lol" value="switch theme">
+ 
+			</div>
 			</nav>
+			
 
 </div>
 	
@@ -152,7 +162,7 @@ Last Name
 </div>
 
 <div class="part">
-	<input type="submit" name="submit">
+	<input type="submit" name="submit" id="submit_id">
 	<label>Register</label>
 </div>
 </div>
@@ -161,7 +171,7 @@ Last Name
 	<div class="image-part">
 		<h2>Why should you choose us?</h2>
 
-<table style="width:100%">
+<table style="width:100%" id="custorder2">
   <tr>
     <th>Reliability</th>
     <th>Price</th> 
